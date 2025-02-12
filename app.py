@@ -33,7 +33,7 @@ app.config["SESSION_REDIS"] = redis.from_url(REDIS_URL)
 Session(app)
 
 # Get Neon database URL
-MY_DATABASE_URL = os.environ.get("MY_")
+MY_DATABASE_URL = os.environ.get("MY_DATABASE_URL")
 
 # Configure engine
 engine = create_engine(MY_DATABASE_URL, echo=True)
