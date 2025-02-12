@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Welcome
+{% endblock %}
+
+{% block main %}
+<div class="header pt-2 pb-5">
+    <h1>Welcome!</h1>
+</div>
+
+<div class="container">
+    <div class="row pb-5">
+        <div class="col">
+            <h2>What is FULU Finance?</h2>
+            <p>FULU Finance is a stock trading platform that allows you to buy and sell stocks</p>
+        </div>
+        <div class="col">
+            <h2>What can I trade?</h2>
+            <p>We allow you to trade any stock that is listed on the NYSE (New York Stock Exchange)</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h1>How does it work?</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card">
+            <h5 class="card-header">Quote</h5>
+            <div class="card-body">
+                <p class="card-text">Here is truly where the fun begins.</p>
+                <p class="card-text">Input your stock symbol into the given field to receive back the current price of a single share in US Dollars</p>
+                <p class="font-weight-bold">Example:</p>
+                 <p>Let's say you quote Apple (AAPL) shares. You can expect an output like: <br>
+                    A share of Apple Inc. Common Stock (AAPL) costs $221.51
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row py-1">
+        <div class="card">
+            <h5 class="card-header">Buy</h5>
+            <div class="card-body">
+                <p class="card-text">Now let's make some money.</p>
+                <p class="card-text">Input a stock symbol and the amount of shares you would like to purchase</p>
+                <p class="font-weight-bold">Example:</p>
+                <p>Let's say you want to buy 5 shares of Apple (AAPL). Make sure to input "AAPL" into stock symbol and "5" into shares. After that, you should be able to
+                see it listed on your portfolio. (Well, provided you have enough money to buy it of course :P) 
+            </div>
+        </div>
+    </div>
+    <div class="row py-1">
+        <div class="card">
+            <h5 class="card-header">Sell</h5>
+            <div class="card-body">
+                <p class="card-text">Well I hope you are atleast making a profit</p>
+                <p class="card-text">Input a stock symbol and the amount of shares you would like to sell</p>
+                <p class="font-weight-bold">Example:</p>
+                <p>Let's say you want to sell 5 shares of Apple (AAPL). Make sure to input "AAPL" into stock symbol and "5" into shares. After that, you should be able to 
+                   see your holdings decrease and your cash balance increase.
+            </div>
+        </div>
+    </div>
+    <div class="row py-1">
+        <div class="card">
+            <h5 class="card-header">History</h5>
+            <div class="card-body">
+                <p class="card-text">Here is where we get to see how much of a trading wizz you are</p>
+                <p class="card-text">You can view all your past transactions here hopefully to reflect and improve on your past decisions</p>
+                <p>No example for this one, just some accountability for how you turned $10K into $100 in less than a day * do better :| *</p>
+            </div>
+        </div>
+    </div>
+    <div class="row pt-5">
+        <h3>Here's a few more tips:</h3>
+        <ul class="list-group">
+            <li class="list-group-item">For those of you using mobile, you can find these options using the navigation button with three lines</li>
+            <li class="list-group-item">You can always tap the logo to go back to the homepage</li>
+            <li class="list-group-item">Make sure to always use proper Risk Management</li>
+            <li class="list-group-item">Don't try to make a million in a day, the turtle beats the hare in a race</li>
+            <li class="list-group-item">Make sure to enjoy using the app!</li>
+        </ul>
+    </div>
+    <div class="row pt-5">
+        <h5>Ready to get started?</h5>
+        <a class="btn btn-primary" href="/">Let's Go!</a>
+    </div>
+</div>
+{% endblock %}

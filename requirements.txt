@@ -1,0 +1,8 @@
+sqlalchemy
+Flask
+Flask-Session
+pytz
+requests
+flask_sqlalchemy
+psycopg2-binary
+redis

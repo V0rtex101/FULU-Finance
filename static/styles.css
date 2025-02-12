@@ -1,0 +1,48 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+.navbar-brand {
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Create the top line on hover */
+.navbar-brand::after {
+    content: "";
+    position: absolute;
+    top: -4px; /* Adjusts the position above the text */
+    left: 0;
+    width: 100%;
+    height: 3px; /* Thickness of the line */
+    background-color: rgb(21, 69, 228); /* Color of the top hover effect */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show the top line on hover */
+.navbar-brand:hover::after {
+    opacity: 1; /* Becomes visible */
+}
+
