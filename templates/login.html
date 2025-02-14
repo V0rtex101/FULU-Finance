@@ -6,7 +6,7 @@
 
 {% block main %}
 
-<form action="/login" method="post">
+<form action="/auth/login" method="post">
     <div class="my-3 ">
         <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="username" placeholder="Username" type="text">
     </div>
@@ -15,8 +15,8 @@
     </div>
     <button class="btn btn-primary" type="submit">Log In</button>
     <div class="my-3">
-        <p>Don't have an account? <a href="/register">Register</a></p>
-        <p><a href="/change">Change Password</a></p>
+        <p>Don't have an account? <a href="/auth/register">Register</a></p>
+        <p><a href="/auth/change">Change Password</a></p>
     </div>
 </form>
     
